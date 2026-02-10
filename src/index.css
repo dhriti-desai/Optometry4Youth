@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #249696;
+  --dark-charcoal: #212121;
+  --warm-white: #f5f2e7;
+  --light-teal: #aed7d9;
+  --teal: #249696;
+  --deep-teal: #1d6c6c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Inter', 'Nunito', sans-serif;
+  background-color: #f5f2e7;
+  background-image: url('/images/83949683-ophthalmology-eyes-health-care-seamless-pattern-medical-vector-blue-background-optometry.jpg');
+  background-size: 150px 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  color: #212121;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 242, 231, 0.75);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  transition: all 0.2s ease;
+}
