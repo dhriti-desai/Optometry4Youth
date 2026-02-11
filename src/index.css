@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@ html {
 
 html, body, #root { height: 100%; }
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Merriweather', serif;
   background-color: #f5f2e7;
   background-image: url('/images/83949683-ophthalmology-eyes-health-care-seamless-pattern-medical-vector-blue-background-optometry.jpg');
   background-size: 150px 150px;
@@ -44,6 +44,10 @@ body::before {
 #root {
   position: relative;
   z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
 }
 
 * {

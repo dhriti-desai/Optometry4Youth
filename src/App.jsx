@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Mission from './pages/Mission'
 import Team from './pages/Team'
 import Events from './pages/Events'
 import Newsletter from './pages/Newsletter'
@@ -19,6 +20,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/mission" element={<Mission />} />
             <Route path="/team" element={<Team />} />
             <Route path="/events" element={<Events />} />
             <Route path="/newsletter" element={<Newsletter />} />
