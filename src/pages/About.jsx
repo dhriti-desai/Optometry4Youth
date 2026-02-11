@@ -26,9 +26,7 @@ export default function About() {
                 </div>
                 <h2 className="text-3xl font-bold text-dark-charcoal mb-4">Our Story</h2>
                 <p className="text-dark-charcoal/80 text-lg leading-relaxed">
-                  Optometry4Youth was born from a simple idea: eye health education doesn't have to be boring. 
-                  We're a group of passionate students who believe every young person deserves to understand how 
-                  their vision works and how to keep their eyes healthy for life.
+                  We are a student-led branch of Medicine4Youth based in North America. We are dedicated to empowering youth interested in optometry and vision science by providing accessible education and experiences that spark curiosity and support career exploration.
                 </p>
               </div>
             </div>
@@ -55,9 +53,7 @@ export default function About() {
                 </div>
                 <h2 className="text-3xl font-bold text-dark-charcoal mb-4">Our Vision</h2>
                 <p className="text-dark-charcoal/80 text-lg leading-relaxed">
-                  To create a world where every young person has access to quality eye health education and 
-                  resources, empowering them to take care of their vision for life. We're building a community 
-                  that makes learning about eyes exciting and accessible.
+                  We envision a future where every student with an interest in optometry can confidently pursue their passion, regardless of background or access to resources. Through community, education, and mentorship, we strive to make the path to optometry school more visible, equitable, and empowering for youth throughout all stages of their journey.
                 </p>
               </div>
             </div>
@@ -72,9 +68,7 @@ export default function About() {
                 </div>
                 <h2 className="text-3xl font-bold text-dark-charcoal mb-4">Our Impact</h2>
                 <p className="text-dark-charcoal/80 text-lg leading-relaxed">
-                  We've reached hundreds of students through interactive workshops, fun educational content, 
-                  and community outreach programs focused on vision health and eye care awareness. Every day, 
-                  we're helping young people see their future more clearly.
+                  We've reached hundreds of students through interactive workshops, fun educational content, and community outreach events focused on vision health and the path to optometry.
                 </p>
               </div>
             </div>

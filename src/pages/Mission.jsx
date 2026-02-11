@@ -16,8 +16,7 @@ export default function Mission() {
         <div className="mb-16 animate-fade-in">
           <div className="bg-gradient-to-br from-teal to-deep-teal rounded-3xl p-12 text-center shadow-2xl">
             <p className="text-2xl md:text-3xl font-semibold text-warm-white leading-relaxed">
-              To inspire and educate middle and high school students about eye health and vision care 
-              through fun, interactive programs and engaging digital content.
+              Our mission is to equip and inspire the next generation of optometry professionals by providing accessible resources, personalized support, and meaningful opportunities.
             </p>
           </div>
         </div>
