@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +19,7 @@ html {
 
 html, body, #root { height: 100%; }
 body {
-  font-family: 'Inter', 'Nunito', sans-serif;
+  font-family: 'Outfit', sans-serif;
   background-color: #f5f2e7;
   background-image: url('/images/83949683-ophthalmology-eyes-health-care-seamless-pattern-medical-vector-blue-background-optometry.jpg');
   background-size: 150px 150px;

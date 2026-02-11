@@ -33,44 +33,62 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <div className="container mx-auto px-4 py-12 min-h-screen">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-dark-charcoal mb-8 text-center animate-fade-in">Our Team</h1>
+    <div className="min-h-screen">
+      <div className="container mx-auto px-4 py-16 max-w-7xl">
+        {/* Hero */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
+            Meet the Team
+          </h1>
+          <div className="w-24 h-1 bg-teal mx-auto mb-6"></div>
+          <p className="text-xl text-dark-charcoal/70 max-w-2xl mx-auto">
+            The passionate students behind Optometry4Youth
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Team Grid - Larger Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-lg p-6 text-center hover:shadow-2xl hover:scale-105 transition-all animate-fade-in"
+              className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition-all animate-fade-in"
             >
-              <div className="w-24 h-24 bg-gradient-to-br from-light-teal to-teal rounded-full mx-auto mb-4 overflow-hidden flex items-center justify-center">
-                {member.image ? (
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <svg className="w-12 h-12 text-warm-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                  </svg>
-                )}
+              <div className="p-8">
+                <div className="flex items-start gap-6">
+                  <div className="w-24 h-24 bg-gradient-to-br from-light-teal to-deep-teal rounded-2xl overflow-hidden flex items-center justify-center flex-shrink-0">
+                    {member.image ? (
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <svg className="w-14 h-14 text-warm-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-dark-charcoal mb-2">{member.name}</h3>
+                    <p className="text-lg text-teal font-semibold mb-1">{member.role}</p>
+                    <p className="text-sm text-dark-charcoal/60 mb-4">{member.affiliation}</p>
+                    <p className="text-dark-charcoal/70 leading-relaxed">{member.bio}</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-dark-charcoal mb-1">{member.name}</h3>
-              <p className="text-sm text-teal font-semibold mb-1">{member.role}</p>
-              <p className="text-xs text-dark-charcoal/60 mb-3">{member.affiliation}</p>
-              <p className="text-dark-charcoal/70 text-sm leading-relaxed">{member.bio}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 animate-fade-in">
-          <h2 className="text-2xl font-bold text-dark-charcoal mb-6 text-center">About Us</h2>
-          <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all">
-            <p className="text-dark-charcoal/80 text-center text-lg leading-relaxed">
+        {/* About Section */}
+        <div className="animate-fade-in">
+          <div className="bg-gradient-to-br from-light-teal/40 to-teal/20 rounded-3xl p-12 text-center shadow-xl">
+            <h2 className="text-3xl font-bold text-dark-charcoal mb-6">Student-Led, Student-Focused</h2>
+            <p className="text-dark-charcoal/80 text-lg leading-relaxed max-w-3xl mx-auto">
               Optometry4Youth is a student-led organization by students, for students. Our mission is to 
               create accessible opportunities and fun learning experiences for young people passionate about 
-              eye health and vision care.
+              eye health and vision care. Together, we're making a difference in how students learn about 
+              and care for their vision.
             </p>
           </div>
         </div>
