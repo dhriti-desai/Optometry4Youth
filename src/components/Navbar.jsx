@@ -17,7 +17,6 @@ export default function Navbar(){
         <div className="hidden md:flex items-center gap-6">
           <Link to="/" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/') ? 'text-deep-teal font-semibold' : ''}`}>Home</Link>
           <Link to="/about" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/about') ? 'text-deep-teal font-semibold' : ''}`}>About</Link>
-          <Link to="/mission" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/mission') ? 'text-deep-teal font-semibold' : ''}`}>Mission</Link>
           <Link to="/team" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/team') ? 'text-deep-teal font-semibold' : ''}`}>Team</Link>
           <Link to="/events" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/events') ? 'text-deep-teal font-semibold' : ''}`}>Events</Link>
           <Link to="/newsletter" className={`hover:text-deep-teal hover:scale-105 transition-all ${isActive('/newsletter') ? 'text-deep-teal font-semibold' : ''}`}>Newsletter</Link>
